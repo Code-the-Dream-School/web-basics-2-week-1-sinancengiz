@@ -20,7 +20,7 @@ console.log('hello world')
  */
 
  function any_value(any_var){
-     console.log("Any value");
+     console.log(any_var);
  }
 
  any_value("This is any value fanctions Question 1");
