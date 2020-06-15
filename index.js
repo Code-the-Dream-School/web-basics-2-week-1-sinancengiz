@@ -23,7 +23,7 @@ console.log('hello world')
      console.log("Any value");
  }
 
- any_value;
+ any_value("This is any value fanctions Question 1");
 
 // TODO: ADD CODE HERE
 
