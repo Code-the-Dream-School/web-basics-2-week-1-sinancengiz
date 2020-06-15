@@ -41,7 +41,7 @@ console.log('hello world')
  first_name = "Sinan";
  last_name = "Cengiz";
 
- console.log(first_name + " " +last_name);
+ console.log("First Name is " + first_name + ", Last Name is " +last_name);
 
 // TODO: ADD CODE HERE
 
@@ -56,6 +56,11 @@ console.log('hello world')
  *
  * Example Output: "$49.90"
  */
+
+ price = 9.98;
+ quantity = 5;
+ total = price * quantity
+ console.log(total.toFixed(2))
 
 // TODO: ADD CODE HERE
 
