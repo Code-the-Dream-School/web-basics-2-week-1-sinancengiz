@@ -22,8 +22,9 @@ console.log('hello world')
  function any_value(any_var){
      console.log(any_var);
  }
-var any_var ="This is any value fanctions Question 1";
-any_value(any_var);
+var any_var ="This is any value fanctions";
+console.log("Question 1:");
+any_value("Answer: "+any_var);
 
 
 
@@ -40,8 +41,8 @@ any_value(any_var);
 // TODO: ADD CODE HERE
  first_name = "Sinan";
  last_name = "Cengiz";
-
- console.log("First Name is " + first_name + ", Last Name is " +last_name +" Question 2");
+ console.log("Question 2:");
+ console.log("Answer: "+"First Name is " + first_name + ", Last Name is " +last_name );
 
 
 
@@ -60,7 +61,8 @@ any_value(any_var);
  price = 9.98;
  quantity = 5;
  total = price * quantity
- console.log("Total is "+total.toFixed(2))
+ console.log("Question 3:");
+ console.log("Answer: "+"Total is "+total.toFixed(2))
 
 
 
@@ -86,8 +88,8 @@ if (weather == "Sunny"){
 else{
     message = "Aww! It's not sunny outside";
 }
-
-console.log(message)
+console.log("Question 4:");
+console.log("Answer: "+message)
 
 
 
@@ -104,9 +106,13 @@ console.log(message)
  */
 // TODO: ADD CODE HERE
 function myFunction(){
-    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    //generate a random string
+    random_string = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+
+    return "Random "+typeof(random_string)+": " + random_string;
 }
-myFunction()
+console.log("Question 5:");
+console.log("Answer: "+myFunction())
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -118,6 +124,15 @@ myFunction()
  *
  * Example Output: "I called an arrow function!"
  */
+myArrowFunction = () => {
+    //generate a random string
+    random_string = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+
+    return "Random "+typeof(random_string)+": " + random_string ;
+}
+console.log("Question 6:");
+console.log("Answer: "+myArrowFunction())
+
 
 // TODO: ADD CODE HERE
 
@@ -132,6 +147,12 @@ myFunction()
  *
  * Example Output: "WHY AM I SCREAMING"
  */
+stringToUpper = (str) => {
+    return str.toUpperCase() 
+}
+console.log("Question 7:");
+console.log(stringToUpper("Answer: "+"return uppercase of this string"))
+
 
 // TODO: ADD CODE HERE
 
@@ -151,3 +172,12 @@ myFunction()
  */
 
 // TODO: ADD CODE HERE
+multiplyByTwo = (number) => {
+    return number* 2 
+}
+
+num1 = multiplyByTwo(1)
+num2 = multiplyByTwo(5)
+num3 = multiplyByTwo(10)
+console.log("Question 8:");
+console.log("Answer: "+`Num1: ${num1},  Num2: ${num2}, Num3: ${num3}`)
