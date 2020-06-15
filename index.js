@@ -18,14 +18,14 @@ console.log('hello world')
  *
  * Example Output: n/a
  */
-
+// TODO: ADD CODE HERE
  function any_value(any_var){
      console.log(any_var);
  }
 var any_var ="This is any value fanctions Question 1";
 any_value(any_var);
 
-// TODO: ADD CODE HERE
+
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -37,13 +37,13 @@ any_value(any_var);
  *
  * Example Output: "Elizabeth Thompson"
  */
-
+// TODO: ADD CODE HERE
  first_name = "Sinan";
  last_name = "Cengiz";
 
- console.log("First Name is " + first_name + ", Last Name is " +last_name);
+ console.log("First Name is " + first_name + ", Last Name is " +last_name +" Question 2");
 
-// TODO: ADD CODE HERE
+
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -56,13 +56,13 @@ any_value(any_var);
  *
  * Example Output: "$49.90"
  */
-
+// TODO: ADD CODE HERE
  price = 9.98;
  quantity = 5;
  total = price * quantity
  console.log("Total is "+total.toFixed(2))
 
-// TODO: ADD CODE HERE
+
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -77,6 +77,7 @@ any_value(any_var);
  *
  * Example Output: "Aww! It's not sunny outside"
  */
+// TODO: ADD CODE HERE
 weather = "Rainy";
 var message;
 if (weather == "Sunny"){
@@ -89,7 +90,7 @@ else{
 console.log(message)
 
 
-// TODO: ADD CODE HERE
+
 
 /* Challenge #5
  * Create a function that returns any string
@@ -101,8 +102,11 @@ console.log(message)
  *
  * Example Output: "I called a function!"
  */
-
 // TODO: ADD CODE HERE
+function myFunction(){
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+}
+myFunction()
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
