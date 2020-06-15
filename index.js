@@ -19,6 +19,12 @@ console.log('hello world')
  * Example Output: n/a
  */
 
+ function any_value(any_var){
+     console.log("Any value");
+ }
+
+ any_value;
+
 // TODO: ADD CODE HERE
 
 /* Challenge #2
