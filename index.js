@@ -38,6 +38,11 @@ console.log('hello world')
  * Example Output: "Elizabeth Thompson"
  */
 
+ first_name = "Sinan";
+ last_name = "Cengiz";
+
+ console.log(first_name + " " +last_name);
+
 // TODO: ADD CODE HERE
 
 /* Challenge #3
