@@ -18,8 +18,15 @@ console.log('hello world')
  *
  * Example Output: n/a
  */
-
 // TODO: ADD CODE HERE
+ function any_value(any_var){
+     console.log(any_var);
+ }
+var any_var ="This is any value fanctions";
+console.log("Question 1:");
+any_value("Answer: "+any_var);
+
+
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -31,8 +38,13 @@ console.log('hello world')
  *
  * Example Output: "Elizabeth Thompson"
  */
-
 // TODO: ADD CODE HERE
+ first_name = "Sinan";
+ last_name = "Cengiz";
+ console.log("Question 2:");
+ console.log("Answer: "+"First Name is " + first_name + ", Last Name is " +last_name );
+
+
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -45,8 +57,14 @@ console.log('hello world')
  *
  * Example Output: "$49.90"
  */
-
 // TODO: ADD CODE HERE
+ price = 9.98;
+ quantity = 5;
+ total = price * quantity
+ console.log("Question 3:");
+ console.log("Answer: "+"Total is "+total.toFixed(2))
+
+
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -61,8 +79,20 @@ console.log('hello world')
  *
  * Example Output: "Aww! It's not sunny outside"
  */
-
 // TODO: ADD CODE HERE
+weather = "Rainy";
+var message;
+if (weather == "Sunny"){
+    message = "Yay! It's sunny outside";
+}
+else{
+    message = "Aww! It's not sunny outside";
+}
+console.log("Question 4:");
+console.log("Answer: "+message)
+
+
+
 
 /* Challenge #5
  * Create a function that returns any string
@@ -74,8 +104,15 @@ console.log('hello world')
  *
  * Example Output: "I called a function!"
  */
-
 // TODO: ADD CODE HERE
+function myFunction(){
+    //generate a random string
+    random_string = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+
+    return "Random "+typeof(random_string)+": " + random_string;
+}
+console.log("Question 5:");
+console.log("Answer: "+myFunction())
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -87,6 +124,15 @@ console.log('hello world')
  *
  * Example Output: "I called an arrow function!"
  */
+myArrowFunction = () => {
+    //generate a random string
+    random_string = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+
+    return "Random "+typeof(random_string)+": " + random_string ;
+}
+console.log("Question 6:");
+console.log("Answer: "+myArrowFunction())
+
 
 // TODO: ADD CODE HERE
 
@@ -101,6 +147,12 @@ console.log('hello world')
  *
  * Example Output: "WHY AM I SCREAMING"
  */
+stringToUpper = (str) => {
+    return str.toUpperCase() 
+}
+console.log("Question 7:");
+console.log(stringToUpper("Answer: "+"return uppercase of this string"))
+
 
 // TODO: ADD CODE HERE
 
@@ -120,3 +172,12 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+multiplyByTwo = (number) => {
+    return number* 2 
+}
+
+num1 = multiplyByTwo(1)
+num2 = multiplyByTwo(5)
+num3 = multiplyByTwo(10)
+console.log("Question 8:");
+console.log("Answer: "+`Num1: ${num1},  Num2: ${num2}, Num3: ${num3}`)
