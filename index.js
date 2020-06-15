@@ -22,8 +22,8 @@ console.log('hello world')
  function any_value(any_var){
      console.log(any_var);
  }
-
- any_value("This is any value fanctions Question 1");
+var any_var ="This is any value fanctions Question 1";
+any_value(any_var);
 
 // TODO: ADD CODE HERE
 
@@ -60,7 +60,7 @@ console.log('hello world')
  price = 9.98;
  quantity = 5;
  total = price * quantity
- console.log(total.toFixed(2))
+ console.log("Total is "+total.toFixed(2))
 
 // TODO: ADD CODE HERE
 
@@ -77,6 +77,17 @@ console.log('hello world')
  *
  * Example Output: "Aww! It's not sunny outside"
  */
+weather = "Rainy";
+var message;
+if (weather == "Sunny"){
+    message = "Yay! It's sunny outside";
+}
+else{
+    message = "Aww! It's not sunny outside";
+}
+
+console.log(message)
+
 
 // TODO: ADD CODE HERE
 
